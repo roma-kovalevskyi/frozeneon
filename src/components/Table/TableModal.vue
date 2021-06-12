@@ -61,7 +61,7 @@ export default {
       const packageVersionsList = Object.keys(
         this.selectedPackageDetails.versions
       );
-      return packageVersionsList[packageVersionsList.length - 1];
+      return packageVersionsList[packageVersionsList.length - 1] || 'unknown';
     },
   },
   methods: {
